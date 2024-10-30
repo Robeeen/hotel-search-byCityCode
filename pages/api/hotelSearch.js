@@ -3,8 +3,8 @@ import Amadeus from 'amadeus';
 
 // Initialize Amadeus SDK with environment variables
 const amadeus = new Amadeus({
-    clientId: 'fP7w4AkhOs8ijJnCGGx5n0Gjf7EROTEr',
-    clientSecret: 'eifHBfytod2man4C',
+    clientId: '',
+    clientSecret: '',
   });
 
 export default async function handler(req, res) {
