@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="flex justify-center m-auto border border-solid border-slate-500 rounded-sm">
+      <div className="flex justify-center m-auto">
         <SearchForm onSearch={handleSearch} />
         {loading ? (
           <p className="w-3/4 max-w-3xl m-auto">Loading...</p>
