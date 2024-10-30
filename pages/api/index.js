@@ -1,7 +1,7 @@
 // pages/index.js
-import { useState } from 'react';
-import SearchForm from '../components/SearchForm';
-import HotelList from '../components/HotelList';
+import { useState } from "react";
+import SearchForm from "../components/SearchForm";
+import HotelList from "../components/HotelList";
 
 export default function Home() {
   const [hotels, setHotels] = useState([]);
@@ -10,11 +10,13 @@ export default function Home() {
   const handleSearch = async (searchParams) => {
     setLoading(true);
     try {
-      const response = await fetch(`/api/hotelSearch?${new URLSearchParams(searchParams)}`);
+      const response = await fetch(
+        `/api/hotelSearch?${new URLSearchParams(searchParams)}`
+      );
       const data = await response.json();
       setHotels(data);
     } catch (error) {
-      console.error('Failed to fetch hotels:', error);
+      console.error("Failed to fetch hotels:", error);
     }
     setLoading(false);
   };
