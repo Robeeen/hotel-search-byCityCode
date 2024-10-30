@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     //     subType: Amadeus.location.airport,
     //     //subType: Amadeus.location.city,
     //   });
-    const response = await amadeus.referenceData.locations.hotel.get({
+    const response = await amadeus.referenceData.locations.hotels.byCity.get({
         cityCode,
       });
       // Send the data back to the client

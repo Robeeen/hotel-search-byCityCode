@@ -19,9 +19,10 @@ export default function HotelList({ hotels }) {
         {
           hotels.map((hotel) =>(
             <div key={hotel.id}>
-            <h3>Hotel ID: {hotel.hotel.hotelId}</h3>
-            <p>Name: {hotel.hotel.name}</p>
-            
+            {/* <h3>Hotel ID: {hotel.hotel.hotelId}</h3> */}
+            <p>Name: {hotel.name}</p>
+            <p>ChainCode: {hotel.chainCode}</p>
+            <p>Hotel ID: {hotel.hotelId}</p>
           </div>
           ))
         }

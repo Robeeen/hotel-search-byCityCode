@@ -8,9 +8,9 @@ const amadeus = new Amadeus({
 
 async function testAmadeusAPI() {
   try {
-    const response = await amadeus.referenceData.locations.get({
-        keyword: 'Paris',
-        subType: Amadeus.location.city,
+    const response = await amadeus.referenceData.locations.hotels.byCity.get({
+        cityCode: 'PAR',
+       // subType: [hotels.HOTEL_LEISURE, hotels.HOTEL_GDS]
     });
     console.log(response.data);
   } catch (error) {
