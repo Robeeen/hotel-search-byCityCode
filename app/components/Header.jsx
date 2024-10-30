@@ -12,7 +12,7 @@ const Header = () => {
             <button className='flex items-center gap-2 font-medium py-1 px-3 sm:px-6 border border-solid border-black shadow-[-7px_7px_0px_#000000] '>Get started<Image src={assets.arrow} alt='icon'/></button>
         </div>
         <div className='text-center items-center my-8'>
-            <h1 className='text-3xl sm:text-5xl font-medium'>Improbable Experience in Hotel Search</h1>
+            <h1 className='text-3xl sm:text-5xl font-medium'>Improbable freedom in Hotel Search</h1>
             <p className='mt-10 max-w-[740px] m-auto text-xs sm:text-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure beatae ea impedit esse delectus hic repellendus molestias voluptatem vitae! Aperiam debitis harum assumenda, incidunt provident amet fugit alias reiciendis optio!</p>
             
  

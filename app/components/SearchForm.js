@@ -45,7 +45,7 @@ export default function SearchForm({ onSearch }) {
       /> */}
           <button
             type="submit"
-            className="border-1 border-black py-4 px-4 sm:px-8 active:bg-gray-600 active:text-white "
+            className="border-1 border-black py-4 px-4 sm:px-8 active:bg-gray-600 active:text-white bg-slate-900 text-white "
           >
             Search Hotels
           </button>
