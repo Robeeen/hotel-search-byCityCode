@@ -15,14 +15,14 @@ export default function SearchForm({ onSearch }) {
 
   return (
     <>
-      <div className="flex justify-center">
+      <div className='ml-10'>
         <form
           onSubmit={handleSubmit}
-          className="flex justify-between max-w-[800px] scale-75 sm:scale-100 max-auto mt-10 mb-10 border border-black"
+          className="flex justify-between max-w-[400px] scale-75 sm:scale-100 max-auto mt-5 mb-10 border border-black"
         >
           <input
             type="text"
-            placeholder="City Code 3 Letter"
+            placeholder="3 Letter IATA City Code"
             value={cityCode}
             onChange={(e) => setCityCode(e.target.value)}
             className="pl-4 outline-none"

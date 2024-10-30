@@ -13,7 +13,8 @@ const Header = () => {
         </div>
         <div className='text-center items-center my-8'>
             <h1 className='text-3xl sm:text-5xl font-medium'>Improbable freedom in Hotel Search</h1>
-            <p className='mt-10 max-w-[740px] m-auto text-xs sm:text-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure beatae ea impedit esse delectus hic repellendus molestias voluptatem vitae! Aperiam debitis harum assumenda, incidunt provident amet fugit alias reiciendis optio!</p>
+            <p className='mt-10 max-w-[1000px] m-auto text-xs sm:text-base'>The Hotel List API provides a list of hotels inside a city or an area, it taps into a detailed hotel database returning the name, hotel ID and location for each hotel bookable in Amadeus that matches the specified criteria. The hotel finder API functionality contains three flexible endpoints to look for hotels in several different ways:
+            Find hotels by city using an IATA city code. Limit the results to certain hotel chains, narrow down the list to display only options with the desired amenities, filter by star ratings, and more.</p>
             
  
         </div>
