@@ -13,7 +13,7 @@ export default function DetailsFare({details}){
           {details.map((detail, index) => (
             <div key={index}>              
               <p className='text-rose-800 text-base'>Details Name:{detail.hotel.name}</p>
-              <p className='text-orange-600 text-base'>Fare/Night: {detail.offers[0].price.currency}.{detail.offers[0].price.total}</p>
+              <p className='text-orange-600 text-base'>Fare: {detail.offers[0].price.currency}.{detail.offers[0].price.total}</p>
               <p className='text-orange-600 text-base'>Room Type: {detail.offers[0].room.typeEstimated.category}</p>
               <p>Description: {detail.offers[0].room.description.text} </p>              
             </div>

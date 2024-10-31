@@ -8,12 +8,14 @@ const amadeus = new Amadeus({
 
 export default async function handler(req, res) {
     if (req.method === "GET")  {
-        const { hotelIds, adults  } = req.query;
+        const { hotelIds, adults, checkInDate, checkOutDate  } = req.query;
     
         try {
           const response = await amadeus.shopping.hotelOffersSearch.get({
             hotelIds,
             adults,
+            checkInDate,
+            checkOutDate,
           });
            // Send the data back to the client
             res.status(200).json(response.data);
