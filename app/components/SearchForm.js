@@ -2,11 +2,8 @@
 import { useState } from "react";
 
 export default function SearchForm({ onSearch }) {
-  //const [keyword, setKeyword] = useState('');
+
   const [cityCode, setCityCode] = useState("");
-  // const [checkInDate, setCheckInDate] = useState('');
-  // const [checkOutDate, setCheckOutDate] = useState('');
-  // const [adults, setAdults] = useState(1);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,22 +24,7 @@ export default function SearchForm({ onSearch }) {
             onChange={(e) => setCityCode(e.target.value)}
             className="pl-4 outline-none"
           />
-          {/* <input
-        type="date"
-        value={checkInDate}
-        onChange={(e) => setCheckInDate(e.target.value)}
-      />
-      <input
-        type="date"
-        value={checkOutDate}
-        onChange={(e) => setCheckOutDate(e.target.value)}
-      /> */}
-          {/* <input
-        type="number"
-        min="1"
-        value={adults}
-        onChange={(e) => setAdults(e.target.value)}
-      /> */}
+          
           <button
             type="submit"
             className="border-1 border-black py-4 px-4 sm:px-8 active:bg-gray-600 active:text-white bg-slate-900 text-white "

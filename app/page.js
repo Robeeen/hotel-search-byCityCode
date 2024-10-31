@@ -4,10 +4,13 @@ import { useState } from "react";
 import Header from "./components/Header";
 import SearchForm from "./components/SearchForm";
 import HotelList from "./components/HotelList";
+import OfferDetails from "./components/OfferDetails";
+import DetailsFare from "./components/DetailsFare";
 
 export default function Home() {
-  const [hotels, setHotels] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [ hotels, setHotels ] = useState([]);
+  const [ loading, setLoading ] = useState(false);
+  const [ details, setDetails ] = useState([]);
 
   const handleSearch = async (searchParams) => {
     setLoading(true);
@@ -23,6 +26,18 @@ export default function Home() {
     setLoading(false);
   };
 
+  // const displayMore = async (searchParams) =>{
+  //   try{
+  //     const response = await fetch(
+  //       `/api/hotelOffer?${new URLSearchParams(searchParams)}`
+  //     );
+  //     const data = await response.json();
+  //     setDetails(data);
+  //   }catch (error) {
+  //     console.error("Failed to fetch Details:", error);
+  //   }
+  // };
+
   return (
     <div>
       <Header />
@@ -33,6 +48,8 @@ export default function Home() {
         ) : (
           <HotelList hotels={hotels} />
         )}
+        {/* <OfferDetails onClick={displayMore} />
+        <DetailsFare details={details} /> */}
       </div>
     </div>
   );
