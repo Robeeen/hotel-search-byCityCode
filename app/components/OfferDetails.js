@@ -34,15 +34,17 @@ export default function OfferDetails({ hotelid }) {
             placeholder="HOTEL ID"
             value= {hotelIds}
             onChange={(e) => setHotelIds(e.target.value)}
+            className="text-gray-500"
             />
 
             <input type="text"
-            placeholder="Adult"
+            placeholder="Person"
             value={adults}
             onChange={(e) => setAdults(e.target.value)}
+            className="text-gray-500 active:border-gray-300 outline-yes border border-gray-400 rounded-sm pl-2 py-1 bg-gray-200"
             />
 
-          <button type="submit">Display More</button>
+          <button type="submit" className='rounded-sm border border-amber-600 bg-rose-400 ml-10 px-2 py-1'>Display More</button>
         </form>
       </div>
       <DetailsFare details={details} />
