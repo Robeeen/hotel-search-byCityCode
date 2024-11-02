@@ -6,7 +6,7 @@ import SearchForm from "./components/SearchForm";
 import HotelList from "./components/HotelList";
 import OfferDetails from "./components/OfferDetails";
 import DetailsFare from "./components/DetailsFare";
-import BookingDialog from "./components/BookingDialog";
+
 
 export default function Home() {
   const [ hotels, setHotels ] = useState([]);
@@ -55,7 +55,7 @@ export default function Home() {
         <DetailsFare details={details} /> */}
         
         {/* //30.10.2024 - 11:30pm */}
-        <BookingDialog offerId={offerId} setOfferId={offerId} />
+       
       </div>
     </div>
   );

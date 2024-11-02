@@ -1,3 +1,5 @@
+import BookingDialog from './BookingDialog';
+
 export default function DetailsFare({details}){
     if (!details || details.length === 0) {
         return 
@@ -19,6 +21,7 @@ export default function DetailsFare({details}){
               <p>Description: {detail.offers[0].room.description.text} </p>              
             </div>
           ))}
+            <BookingDialog />
         </div>
 
     );

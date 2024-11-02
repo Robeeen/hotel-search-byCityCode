@@ -2,6 +2,7 @@ import { useState } from 'react';
 import DetailsFare from './DetailsFare';
 
 
+
 export default function OfferDetails({ hotelid }) {
   const [hotelIds, setHotelIds] = useState(hotelid);
   const [adults, setAdults] = useState('');
@@ -66,6 +67,7 @@ export default function OfferDetails({ hotelid }) {
         </form>
       </div>
       <DetailsFare details={details} />
+    
     </>
   );
 }
