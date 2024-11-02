@@ -33,7 +33,7 @@ export default function OfferDetails({ hotelid }) {
       <div className="ml-10">
         <form onSubmit={handleSubmit}>
         
-            <input type="text"
+            <input type="hidden"
             placeholder="HOTEL ID"
             value= {hotelIds}
             onChange={(e) => setHotelIds(e.target.value)}

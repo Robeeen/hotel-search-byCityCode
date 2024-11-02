@@ -6,11 +6,13 @@ import SearchForm from "./components/SearchForm";
 import HotelList from "./components/HotelList";
 import OfferDetails from "./components/OfferDetails";
 import DetailsFare from "./components/DetailsFare";
+import BookingDialog from "./components/BookingDialog";
 
 export default function Home() {
   const [ hotels, setHotels ] = useState([]);
   const [ loading, setLoading ] = useState(false);
-  const [ details, setDetails ] = useState([]);
+  //30.10.2024 - 11:30pm
+  const [ offerId, setOfferId ] = useState(null);
 
   const handleSearch = async (searchParams) => {
     setLoading(true);
@@ -26,17 +28,18 @@ export default function Home() {
     setLoading(false);
   };
 
-  // const displayMore = async (searchParams) =>{
-  //   try{
-  //     const response = await fetch(
-  //       `/api/hotelOffer?${new URLSearchParams(searchParams)}`
-  //     );
-  //     const data = await response.json();
-  //     setDetails(data);
-  //   }catch (error) {
-  //     console.error("Failed to fetch Details:", error);
-  //   }
-  // };
+  //30.10.2024 - 11:30pm
+  const handleOffer = async (searchParams) =>{
+    try{
+      const response = await fetch(
+        `/api/offerID?${new URLSearchParams(searchParams)}`
+      );
+      const data = await response.json();
+      setOfferId(data);
+    }catch (error) {
+      console.error("Failed to fetch Details:", error);
+    }
+  };
 
   return (
     <div>
@@ -50,6 +53,9 @@ export default function Home() {
         )}
         {/* <OfferDetails onClick={displayMore} />
         <DetailsFare details={details} /> */}
+        
+        {/* //30.10.2024 - 11:30pm */}
+        <BookingDialog offerId={offerId} setOfferId={offerId} />
       </div>
     </div>
   );
