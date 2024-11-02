@@ -51,14 +51,14 @@ export default function OfferDetails({ hotelid }) {
             <input type="date"          
             value={checkInDate}
             onChange={(e) => setCheckInDate(e.target.value)}
-            className="text-gray-500 active:border-gray-300 outline-yes border border-gray-400 rounded-sm pl-2 py-1 ml-3 bg-gray-200 w-20"
+            className="text-gray-500 active:border-gray-300 outline-yes border border-gray-400 rounded-sm pl-2 py-1 ml-3 bg-gray-200 w-25 pr-2"
 
             />
 
           <input type="date"          
             value={checkOutDate}
             onChange={(e) => setCheckOutDate(e.target.value)}
-            className="text-gray-500 active:border-gray-300 outline-yes border border-gray-400 rounded-sm pl-2 py-1 ml-3 bg-gray-200 w-20"
+            className="text-gray-500 active:border-gray-300 outline-yes border border-gray-400 rounded-sm pl-2 py-1 ml-3 bg-gray-200 w-25 pr-2"
 
             />
 
